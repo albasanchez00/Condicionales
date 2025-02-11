@@ -36,14 +36,32 @@ public class Main {
 
 
         /* Actividad. Solicita por teclado un número y si es menor de 0, indicar que es negativo */
-        System.out.print("Introduce un numero negativo o positivo → "); //Solicitamos el numero.
+        System.out.print("Introduce un numero → "); //Solicitamos el numero.
         int num = sc.nextInt(); //Leemos el numero.
-        if (num >= 0) { //Si es mayor o igual que 0 (positivo)
-            System.out.printf("El numero %d es positivo", num);
-        }else {//Si es menor que 0 (negativo)
-            System.out.printf("El numero %d es negativo", num);
-        }
+//        if (num >= 0) { //Si es mayor o igual que 0 (positivo)
+//            System.out.printf("El numero %d es positivo", num);
+//        }
+//
+//        if(num<0) {//Si es menor que 0 (negativo)
+//            System.out.printf("El numero %d es negativo", num);
+//        }
 
+
+        /* Condicion if-else */
+        /* Sintaxis:
+        *   if (evalua_condicion){ //Si es true
+        *       Bloque de instrucciones
+        *   }else{ //Si es false
+        *       Bloque de instrucciones
+        *   }
+        */
+
+        // Ejemplo: Indicamos si el número anterior es par o impar → num%2==0
+        if(num%2==0) {
+            System.out.printf("El numero %d es par", num);
+        }else {
+            System.out.printf("El numero %d es impar", num);
+        }
 
         sc.close();
     }
