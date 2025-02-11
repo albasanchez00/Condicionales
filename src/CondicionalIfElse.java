@@ -18,19 +18,17 @@ public class CondicionalIfElse {
 
         System.out.println("Ingrese el 2º numero: ");
         int num2 = sc.nextInt();
-
-        if(num1!=num2){ //Si son distintos
-            System.out.print(num1+" y "+num2+ " son diferentes");
-        } else { //Si son iguales
+        // Importante identificar
+        if(num1==num2){ //Si son iguales
             System.out.print(num1+" y "+num2+ " son iguales");
+        } else { //Si son distintos
+            // Variables anidadas.
+            if(num1>num2){
+                System.out.println("Son distintos y "+ num1+ " es mayor que " + num2);
+            } else if (num2>num1) {
+                System.out.println("Son distintos y "+ num2+ " es mayor que " + num1);
+            }
         }
-
-        // Indicamos cual de los dos números introducido es el mayor
-        if(num1>num2){
-            System.out.println(", y "+ num1+ " es mayor que " + num2);
-        } else if (num2>num1) {
-            System.out.println(", y "+ num2+ " es mayor que " + num1);
-        }
-
+        sc.close();
     }
 }

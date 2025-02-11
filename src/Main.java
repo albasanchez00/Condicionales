@@ -63,6 +63,24 @@ public class Main {
             System.out.printf("El numero %d es impar", num);
         }
 
+        // Operador Ternario
+        /*  Ejemplos ->
+            byte a=5,byte b=8;
+            String mensaje= a>=b ? "a es mayor o igual que b":"b es mayor o igual que a";  -> a=b ? true:false
+
+            boolean variable = 5;
+            bOolean variable = a>=b ? 5:0;  -> a>=b ? true:false
+        */
+        System.out.println("Introduce tu email ->");
+        String email=sc.next();
+        if (email==""){
+            System.out.println("Este campo es obligatorio");
+        }else {
+            System.out.println("Se ha indicado correctamente el email");
+        }
+
+
+
         sc.close();
     }
 }
