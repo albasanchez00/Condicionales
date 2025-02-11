@@ -14,7 +14,7 @@ public class CondicionalesCifras {
         *  Si el numero esta comprendido entre 10000 y 99999 → tiene 5 cifras (num>=10000 && numero<99999)
         */
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese un numero → ");
+        System.out.println("Ingrese un número → ");
         int numero = sc.nextInt();
 
         if(numero>=0&&numero<=10) {
