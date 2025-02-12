@@ -5,7 +5,7 @@ public class SwitchCaseEdad {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String mensaje;
-        String edadString= JOptionPane.showInputDialog("Ingrese su edad → ");
+        String edadString= JOptionPane.showInputDialog("Ingrese su edad en años → ");
         byte edad;
         try{ // Intenta esto
             edad=Byte.parseByte(edadString);
@@ -13,7 +13,9 @@ public class SwitchCaseEdad {
             edad=-1;
         }
         switch(edad) {
-            case 1,2,3,4,5,6,7,8,9,10,11 -> mensaje="Eres un niño/a";
+            case 0 -> mensaje="Eres un recien nacido / bebé";
+            case 1,2,3,4 -> mensaje="Eres un infante";
+            case 5,6,7,8,9,10,11 -> mensaje="Eres un niño/a";
             case 12,13,14,15,16,17 -> mensaje="Eres un adolescente";
             case 18,19,20,21,22,23,24 -> mensaje="Eres joven";
             case 25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 -> mensaje="Eres un adulto joven";
