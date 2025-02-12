@@ -25,7 +25,9 @@ public class SwitchCaseEdad {
             mensaje="Eres mayor.";
         }else if(edad>=61&&edad<=67) {
             mensaje="Próximo a jubilarte.";
-        }else {
+        } else if (edad>=67) {
+            mensaje="Eres un jubilado.";
+        } else {
             mensaje="La edad no es correcta.";
         }
         JOptionPane.showMessageDialog(null,mensaje);
