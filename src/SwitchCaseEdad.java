@@ -12,16 +12,21 @@ public class SwitchCaseEdad {
         }catch(Exception e){ // Captura o recoge
             edad=-1;
         }
-        switch(edad) {
-            case 0 -> mensaje="Eres un recien nacido / bebé";
-            case 1,2,3,4 -> mensaje="Eres un infante";
-            case 5,6,7,8,9,10,11 -> mensaje="Eres un niño/a";
-            case 12,13,14,15,16,17 -> mensaje="Eres un adolescente";
-            case 18,19,20,21,22,23,24 -> mensaje="Eres joven";
-            case 25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 -> mensaje="Eres un adulto joven";
-            case 45,46,47,48,49,50,51,52,53,54,55,56,57,58,59-> mensaje="Eres un adulto";
-            case 60,61,62,63,64,65 -> mensaje="Puedes proceder a la jubilación";
-            default -> mensaje="No es posible reconocer la edad ingresada. Ingrese una edad entre 1 y 65 años";
+
+        if(edad>=1&&edad<=12) {
+            mensaje="Eres un niño.";
+        } else if (edad>=13&&edad<=17) {
+            mensaje="Eres un adolescente.";
+        }else if(edad>=18&&edad<=21) {
+            mensaje="Eres un joven.";
+        }else if(edad>=22&&edad<=40) {
+            mensaje="Eres un joven.";
+        }else if(edad>=41&&edad<=60) {
+            mensaje="Eres mayor.";
+        }else if(edad>=61&&edad<=67) {
+            mensaje="Próximo a jubilarte.";
+        }else {
+            mensaje="La edad no es correcta.";
         }
         JOptionPane.showMessageDialog(null,mensaje);
     }
