@@ -5,11 +5,11 @@ public class SwitchCaseCalculadora {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-
         String num1T=JOptionPane.showInputDialog("Ingrese el primer numero → ");
         String num2T=JOptionPane.showInputDialog("Ingrese el primer numero → ");
         int num1=0, num2=0;
         String mensaje="";
+
         try{ // Intenta esto
             num1=Integer.parseInt(num1T);
             num2=Integer.parseInt(num2T);
